@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user github card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  
+  <div class="main-container">
+    
+    <div class="search-container">
+      <div class="searcher">
+        <label class="text-search" for="input-search">
+          Github NickName 
+        </label>
+        <button id="btn-search">🔍</button>
+        <input id="input-search" type="search" name="userName" id="search">
+      </div>
+    </div>
+
+    <div class="user-card-container">
+      <div class="user-card">
+        <picture class="avatar">
+          <img class="avatar__img" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img avatar perfil">
+        </picture>
+        <div class="card-description">
+          <h2 class="title-user-name">user name github</h2>
+          <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+          
+          <table>
+            <tr>
+              <th>Public repos</th>
+              <th>followers</th>
+              <th>following</th>
+            </tr>
+            <tr>
+              <td id="public-repo">0</td>
+              <td id="followers">0</td>
+              <td id="following">0</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./assets/index.js"></script>
+</body>
+</html>
