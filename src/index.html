@@ -15,13 +15,13 @@
   <div class="main-container">
     
     <div class="search-container">
-      <div class="searcher">
+      <form class="searcher">
         <label class="text-search" for="input-search">
           Github NickName 
         </label>
         <button id="btn-search">🔍</button>
-        <input id="input-search" type="search" name="userName" id="search">
-      </div>
+        <input id="input-search" type="search" name="userName" id="search" placeholder="github user name" required minlength="1">
+      </form>
     </div>
 
     <div class="user-card-container">
@@ -50,8 +50,19 @@
       </div>
     </div>
 
+    <div class="modal-container inactive">
+      <div class="modal">
+        <button id="btn-close">x</button>
+        <picture class="img-container">
+          <img src="./assets/img/user-not-found.png" alt="user not found">
+        </picture>
+        <p class="modal__message">Couldn't find user, try again.</p>
+      </div>
+    </div>
+
   </div>
 
   <script src="./assets/index.js"></script>
+  <script src="./assets/modal.js"></script>
 </body>
 </html>
